@@ -1,0 +1,243 @@
+:root {
+  --main-color: #0a192f;
+  --sub-color: #64ffda;
+  --alt-color: #ffc107;
+  --text-color: #ccd6f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.head-to-foot {
+}
+
+.hero-section {
+  min-height: 100vh;
+  width: 100%;
+  background-color: var(--main-color);
+}
+
+.hero-section .navbar-section {
+}
+
+.hero-section .navbar-section .containers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  background-color: #4144498c;
+  margin-bottom: 5px;
+}
+
+.hero-section .navbar-section .logo {
+  padding-left: 10px;
+}
+
+.hero-section .navbar-section .logo img {
+  width: 200px;
+  padding: 20px;
+}
+
+.hero-section .navbar-section .center {
+  display: flex;
+  align-items: center;
+}
+
+.hero-section .navbar-section .center input {
+  height: 35px;
+  width: 25vw;
+  background-color: #ccd6f6;
+  outline: none;
+  border: none;
+  padding: 0px 15px;
+  border-radius: 50px;
+  font-size: 16px;
+}
+
+.hero-section .navbar-section .center p {
+  padding-left: 10px;
+  color: var(--sub-color);
+  font-size: 20px;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.hero-section .navbar-section .right {
+  display: flex;
+  align-items: center;
+  padding-right: 50px;
+  gap: 25px;
+}
+
+.hero-section .navbar-section .right .night-mode {
+  font-size: 25px;
+  color: var(--sub-color);
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.sign-btn {
+  display: block;
+  position: relative;
+  padding: 8px 20px;
+  font-size: 18px;
+  border: 1px solid var(--sub-color);
+  color: var(--sub-color);
+  overflow: hidden;
+  transition: 0.4s;
+  z-index: 1;
+  text-decoration: none;
+  background-color: transparent;
+  letter-spacing: 1px;
+  border-radius: 5px;
+}
+
+.sign-btn::after {
+  content: "";
+  height: 130px;
+  width: 130px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  background-color: #00fff6;
+  color: var(--main-color);
+  transition: 0.4s;
+  z-index: -1;
+  transform: translate(-50%, -50%) scale(0) rotate(45deg);
+}
+
+.sign-btn:hover::after {
+  transform: translate(-50%, -50%) scale(1) rotate(45deg);
+}
+
+.sign-btn:hover {
+  color: #03001c;
+}
+
+/*? ============ ASIDE-SECTION =========== */
+
+.aside-section .containers {
+  display: flex;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  gap: 10px;
+
+}
+
+.aside-section .containers .left {
+  width: 25%;
+  height: 100vh;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+
+}
+
+.aside-section .containers .left::-webkit-scrollbar {
+  width: 12px;
+}
+
+.aside-section .containers .left::-webkit-scrollbar-track {
+  box-shadow: inset 0px 0px 2px #00fff6;
+  border-radius: 10px;
+}
+
+.aside-section .containers .left::-webkit-scrollbar-thumb {
+  background: #5e7b8f;
+  border-radius: 10px;
+}
+
+.aside-section .containers .left::-webkit-scrollbar-thumb:hover {
+  background: #646970;
+}
+
+.aside-section .containers .left ul {
+  list-style: none;
+}
+
+.aside-section .containers .left ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #414449;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 5px;
+  padding-left: 30px;
+  color: var(--text-color);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.aside-section .containers .left ul li:hover {
+  color: var(--sub-color);
+  transition: 0.3s;
+}
+
+.aside-section .containers .left ul li i {
+  position: absolute;
+  right: 20px;
+}
+
+.aside-section .containers .left .sub-list {
+  width: 90%;
+  transition: 0.3s;
+}
+
+.aside-section .containers .left .sub-list li {
+  padding: 10px 20px;
+  border-bottom: none;
+  margin-bottom: 0;
+  border-bottom: 1px solid #27282b;
+}
+
+.aside-section .containers .left .sub-list li i {
+  position: relative;
+  left: -10px;
+  padding-right: 0px;
+}
+
+.aside-section .containers .left ul li #up-icon {
+  display: none;
+}
+
+.aside-section .containers .left ul li #down-icon {
+  display: inline-block;
+}
+
+
+/* ?========== RIGHT-SECTION ========= */
+
+
+.aside-section .containers .right{
+  height: 100vh;
+  width: 74%;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #0a192f;
+  padding: 20px;
+  color: #fff;
+  overflow: scroll;
+  font-size: 26px;
+  letter-spacing: 1.5px;
+}
+
+.aside-section .containers .right::-webkit-scrollbar{
+  display: none;
+}
+
+
+
+
+
