@@ -44,10 +44,10 @@
           <div class="containers">
             <div class="left">
               <ul>
-                <li>JavaScript Introduction</li>
-                <li>JS Execution Context</li>
+                <li id="jsIntroBtn" class="myStyle">JavaScript Introduction</li>
+                <li id="exContextBtn">JS Execution Context</li>
                 <li
-                  id="variables"
+                  id="variableBtn"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapse-list-one"
                   aria-expanded="false"
@@ -61,13 +61,13 @@
                 </li>
                 <div class="collapse multi-collapse" id="collapse-list-one">
                   <ul id="subList" class="sub-list">
-                    <li><i class="fa-solid fa-right-long"></i>Var</li>
-                    <li><i class="fa-solid fa-right-long"></i>Let</li>
-                    <li><i class="fa-solid fa-right-long"></i>Const</li>
+                    <li>Var<i class="fa-solid fa-angles-right"></i></li>
+                    <li>Let<i class="fa-solid fa-angles-right"></i></li>
+                    <li>Const<i class="fa-solid fa-angles-right"></i></li>
                   </ul>
                 </div>
                 <li
-                  id="variables"
+                  id="operatorBtn"
                   data-bs-toggle="collapse"
                   data-bs-target="#collapse-list-two"
                   aria-expanded="false"
@@ -78,60 +78,78 @@
                 <div class="collapse multi-collapse" id="collapse-list-two">
                   <ul id="subList" class="sub-list">
                     <li>
-                      <i class="fa-solid fa-right-long"></i>Arithmatic Operator
+                      <i class="fa-solid fa-angles-right"></i>Arithmatic Operator
                     </li>
                     <li>
-                      <i class="fa-solid fa-right-long"></i>Assignment Operator
+                      <i class="fa-solid fa-angles-right"></i>Assignment Operator
                     </li>
                     <li>
-                      <i class="fa-solid fa-right-long"></i>Comparisom Operator
+                      <i class="fa-solid fa-angles-right"></i>Comparisom Operator
                     </li>
                     <li>
-                      <i class="fa-solid fa-right-long"></i>Logical Operator
+                      <i class="fa-solid fa-angles-right"></i>Logical Operator
                     </li>
                     <li>
-                      <i class="fa-solid fa-right-long"></i>Conditional/ Ternary
+                      <i class="fa-solid fa-angles-right"></i>Conditional/ Ternary
                       Operator
                     </li>
                   </ul>
                 </div>
-                <li>
+                <li id="conditionBtn">
                   JS Conditional Statements<i
                     class="fa-solid fa-chevron-down"
                   ></i>
                 </li>
-                <li>JS Loops <i class="fa-solid fa-chevron-down"></i></li>
-                <li>
+                <li id="loopBtn">JS Loops <i class="fa-solid fa-chevron-down"></i></li>
+                <li id="arrayBtn">
                   JS Arrays & Methodes<i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <li>JS Objects <i class="fa-solid fa-chevron-down"></i></li>
-                <li>JS Function <i class="fa-solid fa-chevron-down"></i></li>
-                <li>
+                <li id="objectBtn">JS Objects <i class="fa-solid fa-chevron-down"></i></li>
+                <li id="functionBtn">JS Function <i class="fa-solid fa-chevron-down"></i></li>
+                <li id="stringBtn">
                   JS String & Methodes <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <li>JS Numbers <i class="fa-solid fa-chevron-down"></i></li>
-                <li>JS Hoisting <i class="fa-solid fa-chevron-down"></i></li>
-                <li>
+                <li id="numberBtn">JS Numbers <i class="fa-solid fa-chevron-down"></i></li>
+                <li id="hoistingBtn">JS Hoisting <i class="fa-solid fa-chevron-down"></i></li>
+                <li id="scopeBtn">
                   JS Scope & Lexical Scoping
                   <i class="fa-solid fa-chevron-down"></i>
                 </li>
 
-                <li>JS Maths <i class="fa-solid fa-chevron-down"></i></li>
-                <li>JS Date Object <i class="fa-solid fa-chevron-down"></i></li>
-                <li>JS Set & Map <i class="fa-solid fa-chevron-down"></i></li>
-                <li>
+                <li id="mathBtn">JS Maths <i class="fa-solid fa-chevron-down"></i></li>
+                <li id="dateBtn">JS Date Object <i class="fa-solid fa-chevron-down"></i></li>
+                <li id="setBtn">JS Set & Map <i class="fa-solid fa-chevron-down"></i></li>
+                <li id="asynBtn">
                   JS Async & Await <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <li>JS Prototypes <i class="fa-solid fa-chevron-down"></i></li>
-                <li>
+                <li id="prototypeBtn">JS Prototypes <i class="fa-solid fa-chevron-down"></i></li>
+                <li id="thisBtn">
                   JS This Keywords <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <li>JS Inheritance <i class="fa-solid fa-chevron-down"></i></li>
-                <li>Advance in JS<i class="fa-solid fa-chevron-down"></i></li>
+                <li id="inheriBtn">JS Inheritance <i class="fa-solid fa-chevron-down"></i></li>
+                <li id="advanceBtn">Advance in JS<i class="fa-solid fa-chevron-down"></i></li>
               </ul>
             </div>
             <div class="right">
-              <p></p>
+              <!--? ====== js INtroduction content ====== -->
+              <div id="jsIntro">
+                <h1>Javascript Introduction</h1>
+              <p>Javascript holo akta programming language. Ata abiskar koren <a href="https://en.wikipedia.org/wiki/Brendan_Eich" title="Read-Brendon Each" target="_blank">Brendon Each</a></p>
+              </div>
+
+              <!--? ====== js EXecution content ====== -->
+
+              <div id="exContextContent">
+                <h1>JavaScript Behind the Sceene</h1>
+              </div>
+
+              <!--? ====== js Variabels content ====== -->
+
+              <div id="jsVariable">
+                <h1>JavaScript variables</h1>
+              </div>
+              <!--? ====== js EXecution content ====== -->
+
             </div>
           </div>
         </aside>
