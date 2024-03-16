@@ -43,113 +43,353 @@
         <aside class="aside-section" id="aside">
           <div class="containers">
             <div class="left">
-              <ul>
-                <li id="jsIntroBtn" class="myStyle">JavaScript Introduction</li>
-                <li id="exContextBtn">JS Execution Context</li>
+              <ul id="asideItem">
+                <li id="jsIntroBtn" class="myStyle">JavaScript Roadmap</li>
+                <li data-bs-toggle="collapse"
+                data-bs-target="#collapse-list-basic"
+                aria-expanded="false"
+                aria-controls="collapse-list-basic">Basics of Javascript <i id="variableIcon" class="fa-solid fa-chevron-down"></i></li>
+                <div class="collapse multi-collapse" id="collapse-list-basic">
+                  <ul class="sub-list">
+                    <li>How to Run JavaScript</li>
+                    <li id="exContextBtn">JavaScript Execution Context <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Hoisting <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Scope & Lexical Scoping <span style="color: orange; font-size: 18px;">***</span></li>
+                  </ul>
+                </div>
                 <li
                   id="variableBtn"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapse-list-one"
+                  data-bs-target="#collapse-list-variabels"
                   aria-expanded="false"
-                  aria-controls="collapse-list-one"
+                  aria-controls="collapse-list-variabels"
                 >
-                  JS Variabels & Data Types<i
-                    id="down-icon"
-                    class="fa-solid fa-chevron-down"
-                  ></i>
-                  <i id="up-icon" class="fa-solid fa-chevron-up"></i>
+                  JS Variabels
+                  <i id="variableIcon" class="fa-solid fa-chevron-down"></i>
                 </li>
-                <div class="collapse multi-collapse" id="collapse-list-one">
-                  <ul id="subList" class="sub-list">
-                    <li>Var<i class="fa-solid fa-angles-right"></i></li>
-                    <li>Let<i class="fa-solid fa-angles-right"></i></li>
-                    <li>Const<i class="fa-solid fa-angles-right"></i></li>
+                <div class="collapse multi-collapse" id="collapse-list-variabels">
+                  <ul class="sub-list">
+                    <li id="varBtn">Var</li>
+                    <li>Let <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Const</li>
                   </ul>
                 </div>
                 <li
                   id="operatorBtn"
                   data-bs-toggle="collapse"
-                  data-bs-target="#collapse-list-two"
+                  data-bs-target="#collapse-list-operators"
                   aria-expanded="false"
-                  aria-controls="collapse-list-two"
+                  aria-controls="collapse-list-operators"
                 >
-                  JS Operators <i class="fa-solid fa-chevron-down"></i>
+                  JS Operators
+                  <i id="operatorIcon" class="fa-solid fa-chevron-down"></i>
                 </li>
-                <div class="collapse multi-collapse" id="collapse-list-two">
-                  <ul id="subList" class="sub-list">
-                    <li>
-                      <i class="fa-solid fa-angles-right"></i>Arithmatic Operator
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-angles-right"></i>Assignment Operator
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-angles-right"></i>Comparisom Operator
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-angles-right"></i>Logical Operator
-                    </li>
-                    <li>
-                      <i class="fa-solid fa-angles-right"></i>Conditional/ Ternary
-                      Operator
-                    </li>
+                <div class="collapse multi-collapse" id="collapse-list-operators">
+                  <ul class="sub-list">
+                    <li>Arithmatic Operator <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Assignment Operator <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Comparisom Operator <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Logical Operator <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Conditional/Ternary Operator <span style="color: orange; font-size: 18px;">***</span></li>
                   </ul>
                 </div>
-                <li id="conditionBtn">
-                  JS Conditional Statements<i
+                <li id="conditionBtn" data-bs-toggle="collapse"
+                data-bs-target="#collapse-list-Condition"
+                aria-expanded="false"
+                aria-controls="collapse-list-Condition">
+                  JS Conditional Statements
+                  <i id="conditionIcon" class="fa-solid fa-chevron-down"></i>
+                </li>
+                <div class="collapse multi-collapse" id="collapse-list-Condition">
+                  <ul class="sub-list">
+                    <li>if <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>else <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>else if <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>switch</li>
+                  </ul>
+                </div>
+                <li id="loopBtn" data-bs-toggle="collapse"
+                data-bs-target="#collapse-list-loops"
+                aria-expanded="false"
+                aria-controls="collapse-list-loops">
+                  JS Loops
+                  <i id="loopIcon" class="fa-solid fa-chevron-down"></i>
+                </li>
+                <div class="collapse multi-collapse" id="collapse-list-loops">
+                  <ul class="sub-list">
+                    <li>for <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>do </li>
+                    <li>do while </li>
+                    <li>for in <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>for of <span style="color: orange; font-size: 18px;">***</span></li>
+                  </ul>
+                </div>
+                
+                <li id="objectBtn">
+                  JS Objects
+                  <i id="objIcon" class="fa-solid fa-chevron-down"></i>
+                </li>
+                <li id="functionBtn" data-bs-toggle="collapse"
+                data-bs-target="#collapse-list-function"
+                aria-expanded="false"
+                aria-controls="collapse-list-function">
+                  JS Function <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <div class="collapse multi-collapse" id="collapse-list-function">
+                  <ul class="sub-list">
+                    <li>Arrow Function <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Annonymous Function <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Immediatly Invoked Function expression (IIFE) <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>map <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>filter <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>reduce <span style="color: orange; font-size: 18px;">***</span></li>
+                  </ul>
+                </div>
+                <li id="arrayBtn">
+                  JS Arrays & Methodes<i
+                    id="arrayIcon"
                     class="fa-solid fa-chevron-down"
                   ></i>
                 </li>
-                <li id="loopBtn">JS Loops <i class="fa-solid fa-chevron-down"></i></li>
-                <li id="arrayBtn">
-                  JS Arrays & Methodes<i class="fa-solid fa-chevron-down"></i>
-                </li>
-                <li id="objectBtn">JS Objects <i class="fa-solid fa-chevron-down"></i></li>
-                <li id="functionBtn">JS Function <i class="fa-solid fa-chevron-down"></i></li>
                 <li id="stringBtn">
                   JS String & Methodes <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <li id="numberBtn">JS Numbers <i class="fa-solid fa-chevron-down"></i></li>
-                <li id="hoistingBtn">JS Hoisting <i class="fa-solid fa-chevron-down"></i></li>
-                <li id="scopeBtn">
-                  JS Scope & Lexical Scoping
-                  <i class="fa-solid fa-chevron-down"></i>
+                <li id="numberBtn">
+                  JS Numbers & Methodes <i class="fa-solid fa-chevron-down"></i>
                 </li>
-
-                <li id="mathBtn">JS Maths <i class="fa-solid fa-chevron-down"></i></li>
-                <li id="dateBtn">JS Date Object <i class="fa-solid fa-chevron-down"></i></li>
-                <li id="setBtn">JS Set & Map <i class="fa-solid fa-chevron-down"></i></li>
-                <li id="asynBtn">
-                  JS Async & Await <i class="fa-solid fa-chevron-down"></i>
+                <li id="mathBtn">
+                  JS Maths <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <li id="prototypeBtn">JS Prototypes <i class="fa-solid fa-chevron-down"></i></li>
-                <li id="thisBtn">
+                <li id="dateBtn">
+                  JS Date Object <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <li id="setBtn">
+                  JS Set & Map <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <li id="asynBtn" data-bs-toggle="collapse"
+                data-bs-target="#collapse-list-asynchronoursJs"
+                aria-expanded="false"
+                aria-controls="collapse-list-asynchronoursJs">
+                  Asynchronous Javascript <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <div class="collapse multi-collapse" id="collapse-list-asynchronoursJs">
+                  <ul class="sub-list">
+                    <li>setTimeout <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>setInterval <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Callbacks <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Promises <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>async/awit <span style="color: orange; font-size: 18px;">***</span></li>
+                  </ul>
+                </div>
+                <li id="prototypeBtn" data-bs-toggle="collapse"
+                data-bs-target="#collapse-list-prototypeJS"
+                aria-expanded="false"
+                aria-controls="collapse-list-prototypeJS">
+                  JS Prototypes <i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <div class="collapse multi-collapse" id="collapse-list-prototypeJS">
+                  <ul class="sub-list">
+                    <li>Prototype Chain <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Prototypes & Inheritance  <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Classes <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Iterators <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Generators <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Event Loop <span style="color: orange; font-size: 18px;">***</span></li>
+                  </ul>
+                </div>
+                <li id="thisBtn" data-bs-toggle="collapse"
+                data-bs-target="#collapse-list-thisKeyword"
+                aria-expanded="false"
+                aria-controls="collapse-list-thisKeyword">
                   JS This Keywords <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <li id="inheriBtn">JS Inheritance <i class="fa-solid fa-chevron-down"></i></li>
-                <li id="advanceBtn">Advance in JS<i class="fa-solid fa-chevron-down"></i></li>
+                <div class="collapse multi-collapse" id="collapse-list-thisKeyword">
+                  <ul class="sub-list">
+                    <li>Implict Binding <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Explict Binding  <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>call <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>bind <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>apply <span style="color: orange; font-size: 18px;">***</span></li>
+                  </ul>
+                </div>
+                <li id="advanceBtn" data-bs-toggle="collapse"
+                data-bs-target="#collapse-list-advanceJs"
+                aria-expanded="false"
+                aria-controls="collapse-list-advanceJs">
+                  Advance in JS<i class="fa-solid fa-chevron-down"></i>
+                </li>
+                <div class="collapse multi-collapse" id="collapse-list-advanceJs">
+                  <ul class="sub-list">
+                    <li>Template Litarels <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Spread Operators  <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Rest Operator <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Destructuring <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Extend Keywords <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li>Strict Mode</li>
+                    <li>Regular Expression <span style="color: orange; font-size: 18px;">***</span></li>
+                  </ul>
+                </div>
               </ul>
             </div>
             <div class="right">
               <!--? ====== js INtroduction content ====== -->
-              <div id="jsIntro">
-                <h1>Javascript Introduction</h1>
-              <p>Javascript holo akta programming language. Ata abiskar koren <a href="https://en.wikipedia.org/wiki/Brendan_Eich" title="Read-Brendon Each" target="_blank">Brendon Each</a></p>
+
+              <div id="jsIntroContent" class="animationText">
+                <h1>Javascript Roadmap</h1>
+                <div class="content-section">
+                  <div class="">
+                    <div class="part">
+                      <h2>1. Basic</h2>
+                      <ul>
+                        <li><a href="">What is JavaScript</a></li>
+                        <li><a href="">Javascript How to Run</a></li>
+                        <li><a href="">Javascript Execution Context</a></li>
+                      </ul>
+                    </div>
+                    <div class="part">
+                      <h2>2. Variabels</h2>
+                      <ul>
+                        <li><a href="">Var</a></li>
+                        <li><a href="">Let</a></li>
+                        <li><a href="">Const</a></li>
+                      </ul>
+                    </div>
+                    <div class="part">
+                      <h2>3. Data Type</h2>
+                      <ul>
+                        <li><a href="">Number</a></li>
+                        <li><a href="">Boolean</a></li>
+                        <li><a href="">String</a></li>
+                        <li><a href="">Undefined</a></li>
+                        <li><a href="">Null</a></li>
+                        <li><a href="">Bigint</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="part">
+                      <h2>4. Operator</h2>
+                      <ul>
+                        <li><a href="">Arithmatic Operator</a></li>
+                        <li><a href="">Comparison Operator</a></li>
+                        <li><a href="">Logical Operator</a></li>
+                        <li><a href="">Assignment Operator</a></li>
+                        <li><a href="">Ternary Operator</a></li>
+                        <li><a href="">Typeof Operator</a></li>
+                      </ul>
+                    </div>
+                    <div class="part">
+                      <h2>5. Conditional Statements</h2>
+                      <ul>
+                        <li><a href="">if</a></li>
+                        <li><a href="">else</a></li>
+                        <li><a href="">else if</a></li>
+                        <li><a href="">switch</a></li>
+                      </ul>
+                    </div>
+                    <div class="part">
+                      <h2>6. Loops</h2>
+                      <ul>
+                        <li><a href="">for</a></li>
+                        <li><a href="">while</a></li>
+                        <li><a href="">do while</a></li>
+                        <li><a href="">for of</a></li>
+                        <li><a href="">for in</a></li>
+                      </ul>
+                    </div>
+                    <div class="part">
+                      <h2>7. Functions</h2>
+                      <ul>
+                        <li><a href="">Arrow Function</a></li>
+                        <li><a href="">Annonymous Function</a></li>
+                        <li>
+                          <a href=""
+                            >Immediatly Invoked Function expression (IIFE)</a
+                          >
+                        </li>
+                        <li>
+                          <a href=""
+                            >Higher Order Function (map, filter, reduce)</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="part">
+                      <h2>8. Built-in Methods</h2>
+                      <ul>
+                        <li><a href="">Array Methods</a></li>
+                        <li><a href="">String Methods</a></li>
+                        <li><a href="">Number Methods</a></li>
+                      </ul>
+                    </div>
+                    <div class="part">
+                      <h2>9. this Keyword</h2>
+                      <ul>
+                        <li><a href="">Implict Binding</a></li>
+                        <li><a href="">Explict Binding</a></li>
+                        <li><a href="">Call, Bind, Apply</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="part">
+                      <h2>10. Prototypes</h2>
+                      <ul>
+                        <li><a href="">Prototype Chain</a></li>
+                        <li><a href="">Prototypes & Inheritance</a></li>
+                        <li><a href="">Classes</a></li>
+                        <li><a href="">Iterators</a></li>
+                        <li><a href="">Generators</a></li>
+                        <li><a href="">Event Loop</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="part">
+                      <h2>11. Asynchoronous JS</h2>
+                      <ul>
+                        <li><a href="">setTimeout</a></li>
+                        <li><a href="">setInterval</a></li>
+                        <li><a href="">Callbacks</a></li>
+                        <li><a href="">Promises</a></li>
+                        <li><a href="">async/awit</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="part">
+                      <h2>12. More Concepts</h2>
+                      <ul>
+                        <li><a href="">Template Litarels</a></li>
+                        <li><a href="">Spread Operators</a></li>
+                        <li><a href="">Rest Operator</a></li>
+                        <li><a href="">Destructuring</a></li>
+                        <li><a href="">Extend Keywords</a></li>
+                        <li><a href="">Strict Mode</a></li>
+                        <li><a href="">Regular Expression</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <!--? ====== js EXecution content ====== -->
 
-              <div id="exContextContent">
+              <div id="exContextContent" class="animationText">
                 <h1>JavaScript Behind the Sceene</h1>
               </div>
 
-              <!--? ====== js Variabels content ====== -->
+              <!--? ====== js Var content ====== -->
 
-              <div id="jsVariable">
+              <div id="varContent" class="animationText">
                 <h1>JavaScript variables</h1>
               </div>
-              <!--? ====== js EXecution content ====== -->
+              <!--? ====== js Let content ====== -->
 
+              <div id="letContent">
+                <h1>Let holo es6 theke aseche.</h1>
+              </div>
+              <!--? ====== js Const content ====== -->
+
+              <div id="constContent">
+                <h1>Const holo es6 theke aseche.</h1>
+              </div>
             </div>
           </div>
         </aside>

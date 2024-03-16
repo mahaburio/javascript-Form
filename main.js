@@ -1,30 +1,22 @@
-const variableBtn = document.getElementById("variableBtn");
-const downIcon = document.getElementById("down-icon");
-const upIcon = document.getElementById("up-icon");
-
-let isClick = 0;
-variableBtn.addEventListener("click", () => {
-  isClick++;
-  if (isClick == 1) {
-    downIcon.style.display = "none";
-    upIcon.style.display = "inline-block";
-  } else if (isClick == 2) {
-    downIcon.style.display = "inline-block";
-    upIcon.style.display = "none";
-    isClick = isClick - 2;
-  } else {
-  }
-});
-
 const scroll = new LocomotiveScroll({
   el: document.getElementById("head-to-foot"),
   smooth: true,
 });
 
-const exContextBtn = document.getElementById("exContextBtn");
 const exContextContent = document.getElementById("exContextContent");
+const jsIntroContent = document.getElementById("jsIntroContent");
+const varContent = document.getElementById("varContent");
+
+const variableIcon = document.getElementById("variableIcon");
+const operatorIcon = document.getElementById("operatorIcon");
+const conditionIcon = document.getElementById("conditionIcon");
+const loopIcon = document.getElementById("loopIcon");
+const arrayIcon = document.getElementById("arrayIcon");
+const objIcon = document.getElementById("objIcon");
+
+const variableBtn = document.getElementById("variableBtn");
+const exContextBtn = document.getElementById("exContextBtn");
 const jsIntroBtn = document.getElementById("jsIntroBtn");
-const jsIntro = document.getElementById("jsIntro");
 const operatorBtn = document.getElementById("operatorBtn");
 const conditionBtn = document.getElementById("conditionBtn");
 const loopBtn = document.getElementById("loopBtn");
@@ -43,74 +35,109 @@ const prototypeBtn = document.getElementById("prototypeBtn");
 const thisBtn = document.getElementById("thisBtn");
 const inheriBtn = document.getElementById("inheriBtn");
 const advanceBtn = document.getElementById("advanceBtn");
+const varBtn = document.getElementById("varBtn");
 
 
-// exContextBtn.addEventListener("click", () => {
-//   exContextContent.style.display = "block";
-//   document.getElementById("jsIntroBtn").classList.remove("myStyle");
-//   document.getElementById("exContextBtn").classList.add("myStyle");
-// });
+let btnArr = [
+  variableBtn,
+  jsIntroBtn,
+  exContextBtn,
+  varBtn,
+  operatorBtn,
+  conditionBtn,
+  loopBtn,
+  arrayBtn,
+  objectBtn,
+  functionBtn,
+  stringBtn,
+  numberBtn,
+  hoistingBtn,
+  scopeBtn,
+  mathBtn,
+  dateBtn,
+  setBtn,
+  asynBtn,
+  prototypeBtn,
+  thisBtn,
+  inheriBtn,
+  advanceBtn
+];
 
-// jsIntroBtn.addEventListener("click", () => {
-//   jsIntro.style.display = "block";
-//   document.getElementById("exContextBtn").classList.remove("myStyle");
-//   document.getElementById("jsIntroBtn").classList.add("myStyle");
-// });
+// let isClick = 0;
 
-
-// let btnArr = [
-//   exContextBtn,
-//   jsIntroBtn,
-//   variableBtn,
-//   operatorBtn,
-//   conditionBtn,
-//   loopBtn,
-//   arrayBtn,
-//   objectBtn,
-//   functionBtn,
-//   stringBtn,
-//   numberBtn,
-//   hoistingBtn,
-//   scopeBtn,
-//   mathBtn,
-//   dateBtn,
-//   setBtn,
-//   asynBtn,
-//   prototypeBtn,
-//   thisBtn,
-//   inheriBtn,
-//   advanceBtn
-// ];
-
-// btnArr.forEach((element) => {
-//   if (element) {
-//     element.addEventListener("click", () => {
-//       // Remove the class from all buttons
-//       btnArr.forEach(btn => {
-//         btn.classList.remove("myStyle");
-//       });
-      
-//       // Add the class to the clicked button
-//       element.classList.add("myStyle");
+// btnArr.forEach((iconAn)=>{
+//   if(iconAn==variableBtn){
+//     iconAn.addEventListener("click", () => {
+//       isClick++;
+//       if(true){
+//         if (isClick == 1) {
+//           variableIcon.style.transform = "rotate(180deg)";
+//         } else if (isClick == 2) {
+//           variableIcon.style.transform = "rotate(0deg)";
+//           isClick = isClick - 2;
+//         }
+//       }
 //     });
 //   }
 // });
 
+let contentArr = [exContextContent,jsIntroContent,varContent]
 
-let listItem = document.querySelectorAll('li');
+btnArr.forEach((element) => {
+  if (element==jsIntroBtn) {
+    element.addEventListener('click',()=>{
+      contentArr.forEach((content)=>{
+        if(content==jsIntroContent){
+          jsIntroContent.style.display='block'
+        }else{
+          content.style.display="none"
+        }
+      })
+    })
+  }else if (element==exContextBtn) {
+    element.addEventListener('click',()=>{
+      contentArr.forEach((content)=>{
+        if(content==exContextContent){
+          exContextContent.style.display='block'
+        }else{
+          content.style.display="none"
+        }
+      })
+    })
+  }else if(element==varBtn){
+    element.addEventListener('click',()=>{
+      contentArr.forEach((content)=>{
+        if(content==varContent){
+          varContent.style.display='block'
+        }else{
+          content.style.display="none"
+        }
+      })
+    })
+  }
+});
 
-listItem.forEach((element)=>{
-  if (element) {
-    element.addEventListener("click", () => {
+// ? ========== PROTI CLICK A J BACKGROUND CHANGE HOI SETA myStyle add and Remove ===========
+
+let asideItem = document.getElementById('asideItem')
+
+let listItem = asideItem.querySelectorAll('li');
+
+listItem.forEach((item)=>{
+  if (item) {
+    item.addEventListener("click", () => {
       // Remove the class from all buttons
-      listItem.forEach(btn => {
-        btn.classList.remove("myStyle");
+      listItem.forEach(removeClass => {
+        removeClass.classList.remove("myStyle");
       });
       
       // Add the class to the clicked button
-      element.classList.add("myStyle");
+      item.classList.add("myStyle");
     });
   }
 });
 
+
+
+ 
 
