@@ -39,22 +39,37 @@
           </div>
         </div>
 
-        <!-- ==== ASIDE-LEFT-BAR ==== -->
+        <!--? ==== ASIDE-LEFT-BAR ==== -->
+
         <aside class="aside-section" id="aside">
           <div class="containers">
             <div class="left">
               <ul id="asideItem">
-                <li id="jsIntroBtn" class="myStyle">JavaScript Roadmap</li>
-                <li data-bs-toggle="collapse"
-                data-bs-target="#collapse-list-basic"
-                aria-expanded="false"
-                aria-controls="collapse-list-basic">Basics of Javascript <i id="variableIcon" class="fa-solid fa-chevron-down"></i></li>
+                <li id="roadmapBtn" class="myStyle">JavaScript Roadmap</li>
+                <li
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-list-basic"
+                  aria-expanded="false"
+                  aria-controls="collapse-list-basic"
+                >
+                  Basics of Javascript
+                  <i id="variableIcon" class="fa-solid fa-chevron-down"></i>
+                </li>
                 <div class="collapse multi-collapse" id="collapse-list-basic">
                   <ul class="sub-list">
-                    <li>How to Run JavaScript</li>
-                    <li id="exContextBtn">JavaScript Execution Context <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Hoisting <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Scope & Lexical Scoping <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li id="howToRunBtn">How to Run JavaScript</li>
+                    <li id="exContextBtn">
+                      JavaScript Execution Context
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="hoistingBtn">
+                      Hoisting
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="scopeBtn">
+                      Scope & Lexical Scoping
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
                   </ul>
                 </div>
                 <li
@@ -67,11 +82,17 @@
                   JS Variabels
                   <i id="variableIcon" class="fa-solid fa-chevron-down"></i>
                 </li>
-                <div class="collapse multi-collapse" id="collapse-list-variabels">
+                <div
+                  class="collapse multi-collapse"
+                  id="collapse-list-variabels"
+                >
                   <ul class="sub-list">
                     <li id="varBtn">Var</li>
-                    <li>Let <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Const</li>
+                    <li id="letBtn">
+                      Let
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="constBtn">Const</li>
                   </ul>
                 </div>
                 <li
@@ -84,65 +105,133 @@
                   JS Operators
                   <i id="operatorIcon" class="fa-solid fa-chevron-down"></i>
                 </li>
-                <div class="collapse multi-collapse" id="collapse-list-operators">
+                <div
+                  class="collapse multi-collapse"
+                  id="collapse-list-operators"
+                >
                   <ul class="sub-list">
-                    <li>Arithmatic Operator <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Assignment Operator <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Comparisom Operator <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Logical Operator <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Conditional/Ternary Operator <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li id="arithmaticBtn">
+                      Arithmatic Operator
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="assigmentBtn">
+                      Assignment Operator
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="comparisonBtn">
+                      Comparison Operator
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="logicalBtn">
+                      Logical Operator
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="ternaryBtn">
+                      Conditional/Ternary Operator
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
                   </ul>
                 </div>
-                <li id="conditionBtn" data-bs-toggle="collapse"
-                data-bs-target="#collapse-list-Condition"
-                aria-expanded="false"
-                aria-controls="collapse-list-Condition">
+                <li
+                  id="conditionBtn"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-list-Condition"
+                  aria-expanded="false"
+                  aria-controls="collapse-list-Condition"
+                >
                   JS Conditional Statements
                   <i id="conditionIcon" class="fa-solid fa-chevron-down"></i>
                 </li>
-                <div class="collapse multi-collapse" id="collapse-list-Condition">
+                <div
+                  class="collapse multi-collapse"
+                  id="collapse-list-Condition"
+                >
                   <ul class="sub-list">
-                    <li>if <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>else <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>else if <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>switch</li>
+                    <li id="ifBtn">
+                      if <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="elseBtn">
+                      else
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="elseifBtn">
+                      else if
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="switchBtn">switch</li>
                   </ul>
                 </div>
-                <li id="loopBtn" data-bs-toggle="collapse"
-                data-bs-target="#collapse-list-loops"
-                aria-expanded="false"
-                aria-controls="collapse-list-loops">
+                <li
+                  id="loopBtn"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-list-loops"
+                  aria-expanded="false"
+                  aria-controls="collapse-list-loops"
+                >
                   JS Loops
                   <i id="loopIcon" class="fa-solid fa-chevron-down"></i>
                 </li>
                 <div class="collapse multi-collapse" id="collapse-list-loops">
                   <ul class="sub-list">
-                    <li>for <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>do </li>
-                    <li>do while </li>
-                    <li>for in <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>for of <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li id="forBtn">
+                      for
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="whileBtn">While</li>
+                    <li id="dowhileBtn">do while</li>
+                    <li id="forinBtn">
+                      for in
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="forofBtn">
+                      for of
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
                   </ul>
                 </div>
-                
+
                 <li id="objectBtn">
                   JS Objects
                   <i id="objIcon" class="fa-solid fa-chevron-down"></i>
                 </li>
-                <li id="functionBtn" data-bs-toggle="collapse"
-                data-bs-target="#collapse-list-function"
-                aria-expanded="false"
-                aria-controls="collapse-list-function">
+                <li
+                  id="functionBtn"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-list-function"
+                  aria-expanded="false"
+                  aria-controls="collapse-list-function"
+                >
                   JS Function <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <div class="collapse multi-collapse" id="collapse-list-function">
+                <div
+                  class="collapse multi-collapse"
+                  id="collapse-list-function"
+                >
                   <ul class="sub-list">
-                    <li>Arrow Function <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Annonymous Function <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Immediatly Invoked Function expression (IIFE) <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>map <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>filter <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>reduce <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li id="arrowBtn">
+                      Arrow Function
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="annonymousBtn">
+                      Annonymous Function
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="iifeBtn">
+                      Immediatly Invoked Function expression (IIFE)
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="mapBtn">
+                      map
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="filterBtn">
+                      filter
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="reduceBtn">
+                      reduce
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
                   </ul>
                 </div>
                 <li id="arrayBtn">
@@ -166,75 +255,167 @@
                 <li id="setBtn">
                   JS Set & Map <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <li id="asynBtn" data-bs-toggle="collapse"
-                data-bs-target="#collapse-list-asynchronoursJs"
-                aria-expanded="false"
-                aria-controls="collapse-list-asynchronoursJs">
-                  Asynchronous Javascript <i class="fa-solid fa-chevron-down"></i>
+                <li
+                  id="asynBtn"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-list-asynchronoursJs"
+                  aria-expanded="false"
+                  aria-controls="collapse-list-asynchronoursJs"
+                >
+                  Asynchronous Javascript
+                  <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <div class="collapse multi-collapse" id="collapse-list-asynchronoursJs">
+                <div
+                  class="collapse multi-collapse"
+                  id="collapse-list-asynchronoursJs"
+                >
                   <ul class="sub-list">
-                    <li>setTimeout <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>setInterval <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Callbacks <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Promises <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>async/awit <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li id="settimeoutBtn">
+                      setTimeout
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="setintervalBtn">
+                      setInterval
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="callbackBtn">
+                      Callbacks
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="promisesBtn">
+                      Promises
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="asyncBtn">
+                      async/awit
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
                   </ul>
                 </div>
-                <li id="prototypeBtn" data-bs-toggle="collapse"
-                data-bs-target="#collapse-list-prototypeJS"
-                aria-expanded="false"
-                aria-controls="collapse-list-prototypeJS">
+                <li
+                  
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-list-prototypeJS"
+                  aria-expanded="false"
+                  aria-controls="collapse-list-prototypeJS"
+                >
                   JS Prototypes <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <div class="collapse multi-collapse" id="collapse-list-prototypeJS">
+                <div
+                  class="collapse multi-collapse"
+                  id="collapse-list-prototypeJS"
+                >
                   <ul class="sub-list">
-                    <li>Prototype Chain <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Prototypes & Inheritance  <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Classes <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Iterators <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Generators <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Event Loop <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li id="prototypeBtn">
+                      Prototype Chain
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="inheritanceBtn">
+                      Prototypes & Inheritance
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="classesBtn">
+                      Classes
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="iteratorsBtn">
+                      Iterators
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="generatorsBtn">
+                      Generators
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="eventloopBtn">
+                      Event Loop
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
                   </ul>
                 </div>
-                <li id="thisBtn" data-bs-toggle="collapse"
-                data-bs-target="#collapse-list-thisKeyword"
-                aria-expanded="false"
-                aria-controls="collapse-list-thisKeyword">
+                <li
+                  id="thisBtn"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-list-thisKeyword"
+                  aria-expanded="false"
+                  aria-controls="collapse-list-thisKeyword"
+                >
                   JS This Keywords <i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <div class="collapse multi-collapse" id="collapse-list-thisKeyword">
+                <div
+                  class="collapse multi-collapse"
+                  id="collapse-list-thisKeyword"
+                >
                   <ul class="sub-list">
-                    <li>Implict Binding <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Explict Binding  <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>call <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>bind <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>apply <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li id="implictBtn">
+                      Implict Binding
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="explictBtn">
+                      Explict Binding
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="callBtn">
+                      call
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="bindBtn">
+                      bind
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="applyBtn">
+                      apply
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
                   </ul>
                 </div>
-                <li id="advanceBtn" data-bs-toggle="collapse"
-                data-bs-target="#collapse-list-advanceJs"
-                aria-expanded="false"
-                aria-controls="collapse-list-advanceJs">
+                <li
+                  id="advanceBtn"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapse-list-advanceJs"
+                  aria-expanded="false"
+                  aria-controls="collapse-list-advanceJs"
+                >
                   Advance in JS<i class="fa-solid fa-chevron-down"></i>
                 </li>
-                <div class="collapse multi-collapse" id="collapse-list-advanceJs">
+                <div
+                  class="collapse multi-collapse"
+                  id="collapse-list-advanceJs"
+                >
                   <ul class="sub-list">
-                    <li>Template Litarels <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Spread Operators  <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Rest Operator <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Destructuring <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Extend Keywords <span style="color: orange; font-size: 18px;">***</span></li>
-                    <li>Strict Mode</li>
-                    <li>Regular Expression <span style="color: orange; font-size: 18px;">***</span></li>
+                    <li id="templateBtn">
+                      Template Litarels
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="spreadBtn">
+                      Spread Operators
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="restBtn">
+                      Rest Operator
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="destructuringBtn">
+                      Destructuring
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="extendkeyBtn">
+                      Extend Keywords
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
+                    <li id="strictBtn">Strict Mode</li>
+                    <li id="regularexBtn">
+                      Regular Expression
+                      <span style="color: orange; font-size: 18px">***</span>
+                    </li>
                   </ul>
                 </div>
               </ul>
             </div>
             <div class="right">
-              <!--? ====== js INtroduction content ====== -->
+              <!--todo ======JS Roadmap ====== -->
+              <!--? ====== js Roadmap Content ====== -->
 
-              <div id="jsIntroContent" class="animationText">
+              <div id="roadmapContent" class="animationText">
                 <h1>Javascript Roadmap</h1>
                 <div class="content-section">
                   <div class="">
@@ -369,26 +550,329 @@
                 </div>
               </div>
 
-              <!--? ====== js EXecution content ====== -->
+              <!--todo ======JS Basic ====== -->
+              <!--? ====== js How to Run Content ====== -->
+
+              <div id="howToRunContent" class="animationText">
+                <h1>javascript How to Run</h1>
+              </div>
+
+              <!--? ====== js EXecution Content ====== -->
 
               <div id="exContextContent" class="animationText">
                 <h1>JavaScript Behind the Sceene</h1>
               </div>
 
-              <!--? ====== js Var content ====== -->
+              <!--? ====== js Hoisting Content ====== -->
+
+              <div id="hoistingContent" class="animationText">
+                <h1>Hoisting</h1>
+              </div>
+
+              <!--? ====== js Scoping & Lexical Scoping Content ====== -->
+
+              <div id="scopeContent" class="animationText">
+                <h1>Scope</h1>
+              </div>
+
+              <!--todo ======JS Variables ====== -->
+              <!--? ====== js Var Content ====== -->
 
               <div id="varContent" class="animationText">
-                <h1>JavaScript variables</h1>
+                <h1>Var</h1>
               </div>
-              <!--? ====== js Let content ====== -->
+              <!--? ====== js Let Content ====== -->
 
-              <div id="letContent">
-                <h1>Let holo es6 theke aseche.</h1>
+              <div id="letContent" class="animationText">
+                <h1>Let</h1>
               </div>
-              <!--? ====== js Const content ====== -->
+              <!--? ====== js Const Content ====== -->
 
-              <div id="constContent">
-                <h1>Const holo es6 theke aseche.</h1>
+              <div id="constContent" class="animationText">
+                <h1>Const</h1>
+              </div>
+
+              <!--todo ======JS Operators ====== -->
+              <!--? ====== js Arithmatic Content ====== -->
+
+              <div id="arithmaticContent" class="animationText">
+                <h1>Arithmatic Operator</h1>
+              </div>
+
+              <!--? ====== js Assignment Content ====== -->
+
+              <div id="assigmentContent" class="animationText">
+                <h1>Assignment Operator</h1>
+              </div>
+
+              <!--? ====== js Comparision Content ====== -->
+
+              <div id="comparisionContent" class="animationText">
+                <h1>Comparision Operator</h1>
+              </div>
+
+              <!--? ====== js Logical Content ====== -->
+
+              <div id="logicalContent" class="animationText">
+                <h1>Logical Operator</h1>
+              </div>
+
+              <!--? ====== js Ternary Content ====== -->
+
+              <div id="ternaryContent" class="animationText">
+                <h1>Ternary Operator</h1>
+              </div>
+
+              <!--todo ======JS Conditional Statements ====== -->
+              <!--? ====== js If Content ====== -->
+
+              <div id="ifContent" class="animationText">
+                <h1>if Statement</h1>
+              </div>
+
+              <!--? ====== js Else Content ====== -->
+
+              <div id="elseContent" class="animationText">
+                <h1>Else Statement</h1>
+              </div>
+
+              <!--? ====== js Else If Content ====== -->
+
+              <div id="elseifContent" class="animationText">
+                <h1>Else If Statement</h1>
+              </div>
+
+              <!--? ====== js Switch content ====== -->
+
+              <div id="switchContent" class="animationText">
+                <h1>switch Statement</h1>
+              </div>
+
+              <!--todo ======JS Loop ====== -->
+              <!--? ====== js For Loop content ====== -->
+
+              <div id="forContent" class="animationText">
+                <h1>for loop</h1>
+              </div>
+
+              <!--? ====== js While Loop content ====== -->
+
+              <div id="whileContent" class="animationText">
+                <h1>while loop</h1>
+              </div>
+
+              <!--? ====== js Do While Loop content ====== -->
+
+              <div id="dowhileContent" class="animationText">
+                <h1>do while loop</h1>
+              </div>
+
+              <!--? ====== js For In Loop content ====== -->
+
+              <div id="forinContent" class="animationText">
+                <h1>For Loop</h1>
+              </div>
+
+              <!--? ====== js for Of Loop content ====== -->
+
+              <div id="forofContent" class="animationText">
+                <h1>For Of Loop</h1>
+              </div>
+
+              <!--? ====== js Object content ====== -->
+
+              <!--todo ======JS Function ====== -->
+              <!--? ====== js Arrow Function content ====== -->
+
+              <div id="arrowContent" class="animationText">
+                <h1>Arrow Function</h1>
+              </div>
+
+              <!--? ====== js Annonymous Function content ====== -->
+
+              <div id="annonymousContent" class="animationText">
+                <h1>Annonymous Function</h1>
+              </div>
+
+              <!--? ====== js IIFE Function content ====== -->
+
+              <div id="iifeContent" class="animationText">
+                <h1>IIFE Function</h1>
+              </div>
+
+              <!--? ====== js map Methode content ====== -->
+
+              <div id="mapContent" class="animationText">
+                <h1>map Methode</h1>
+              </div>
+
+              <!--? ====== js filter Methode Content ====== -->
+
+              <div id="filterContent" class="animationText">
+                <h1>Filter Method</h1>
+              </div>
+
+              <!--? ====== js reduce Methode content ====== -->
+
+              <div id="reduceContent" class="animationText">
+                <h1>reduce Methode</h1>
+              </div>
+
+              <!--todo ======JS Array ====== -->
+              <!--? ====== js Array Methode content ====== -->
+
+              <!--todo ======JS String ====== -->
+              <!--? ====== js String Methode content ====== -->
+
+              <!--todo ======JS Number ====== -->
+              <!--? ====== js Number Methode content ====== -->
+
+              <!--todo ======JS Maths ====== -->
+              <!--? ====== js Maths Methode content ====== -->
+
+              <!--todo ======JS Date Object ====== -->
+              <!--? ====== js Date Objects content ====== -->
+
+              <!--todo ======JS Asynchronous ====== -->
+              <!--? ====== js setTimeout content ====== -->
+
+              <div id="settimeoutContent" class="animationText">
+                <h1>Set setTimeout</h1>
+              </div>
+
+              <!--? ====== js setInterval content ====== -->
+
+              <div id="setintervalContent" class="animationText">
+                <h1>setinterval Content</h1>
+              </div>
+
+              <!--? ====== js callbackContent content ====== -->
+
+              <div id="callbackContent" class="animationText">
+                <h1>callback Content</h1>
+              </div>
+
+              <!--? ====== js promisesContent content ====== -->
+
+              <div id="promisesContent" class="animationText">
+                <h1>promises Content</h1>
+              </div>
+
+              <!--? ====== js Async/Awiat content ====== -->
+
+              <div id="asyncContent" class="animationText">
+                <h1>async Content</h1>
+              </div>
+
+              <!--todo ======JS PROTOTYPE CHAIN ====== -->
+              <!--? ====== js Prototype content ====== -->
+
+              <div id="prototypeContent" class="animationText">
+                <h1>prototype Content</h1>
+              </div>
+
+              <!--? ====== js Inheritance content ====== -->
+
+              <div id="inheritanceContent" class="animationText">
+                <h1>inheritance Content</h1>
+              </div>
+
+              <!--? ====== js Classes content ====== -->
+
+              <div id="classesContent" class="animationText">
+                <h1>classes Content</h1>
+              </div>
+
+              <!--? ====== js Iterators content ====== -->
+
+              <div id="iteratorsContent" class="animationText">
+                <h1>iterators Content</h1>
+              </div>
+
+              <!--? ====== js Generators content ====== -->
+
+              <div id="generatorsContent" class="animationText">
+                <h1>generatorsContent</h1>
+              </div>
+
+              <!--? ====== js Event Loop content ====== -->
+
+              <div id="eventloopContent" class="animationText">
+                <h1>EvenLoop Content</h1>
+              </div>
+
+              <!--todo ======JS This Keywords ====== -->
+              <!--? ====== js Implict Binding ====== -->
+
+              <div id="implictContent" class="animationText">
+                <h1>implictContent Content</h1>
+              </div>
+
+              <!--? ====== js Explict Binding ====== -->
+
+              <div id="explictContent" class="animationText">
+                <h1>explictContent Content</h1>
+              </div>
+
+              <!--? ====== js Call content ====== -->
+
+              <div id="callContent" class="animationText">
+                <h1>callContent Content</h1>
+              </div>
+
+              <!--? ====== js Bind content ====== -->
+
+              <div id="bindContent" class="animationText">
+                <h1>bindContent Content</h1>
+              </div>
+
+              <!--? ====== js Apply content ====== -->
+
+              <div id="applyContent" class="animationText">
+                <h1>applyContent Content</h1>
+              </div>
+
+              <!--todo ======Advance In JS ====== -->
+              <!--? ====== js Template Litteral ====== -->
+
+              <div id="templateContent" class="animationText">
+                <h1>templateContent Content</h1>
+              </div>
+
+              <!--? ====== js Spread Operators ====== -->
+
+              <div id="spreadContent" class="animationText">
+                <h1>spreadContent Content</h1>
+              </div>
+
+              <!--? ====== js Rest Parameter ====== -->
+
+              <div id="restContent" class="animationText">
+                <h1>restContent Content</h1>
+              </div>
+
+              <!--? ====== js Destructaring ====== -->
+
+              <div id="destructuringContent" class="animationText">
+                <h1>destructuringContent Content</h1>
+              </div>
+
+              <!--? ====== js Extend Keywords ====== -->
+
+              <div id="extendkeyContent" class="animationText">
+                <h1>extendkeyContent Content</h1>
+              </div>
+
+              <!--? ====== js Strict Mood ====== -->
+
+              <div id="strictContent" class="animationText">
+                <h1>strictContent Content</h1>
+              </div>
+
+              <!--? ====== js Regular Expression ====== -->
+
+              <div id="regularexContent" class="animationText">
+                <h1>regularexContent Content</h1>
               </div>
             </div>
           </div>
