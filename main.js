@@ -190,19 +190,17 @@ const regularexContent = document.getElementById("regularexContent");
 
 //* ========== Js Link ========== */
 
-const hideBar = document.getElementById('hideBar');
-const leftPart = document.getElementById('leftPart');
-const backBtn = document.getElementById('backBtn');
+const hideBar = document.getElementById("hideBar");
+const leftPart = document.getElementById("leftPart");
+const backBtn = document.getElementById("backBtn");
 
-hideBar.addEventListener('click',()=>{
+hideBar.addEventListener("click", () => {
   leftPart.style.left = "0px";
-  
-})
-
-backBtn.addEventListener('click',()=>{
-  leftPart.style.left = '-100%'
 });
 
+backBtn.addEventListener("click", () => {
+  leftPart.style.left = "-100%";
+});
 
 let btnArr = [
   roadmapBtn,
@@ -256,7 +254,7 @@ let btnArr = [
   extendkeyBtn,
   strictBtn,
   regularexBtn,
-  howtorunLink
+  howtorunLink,
 ];
 
 let contentArr = [
@@ -342,7 +340,7 @@ btnArr.forEach((element) => {
         }
       });
     });
-  } else if ((element == howToRunBtn)||(element == howtorunLink)) {
+  } else if (element == howToRunBtn || element == howtorunLink) {
     element.addEventListener("click", () => {
       contentArr.forEach((content) => {
         if (content == howToRunContent) {

@@ -178,9 +178,8 @@ body {
   border-radius: 2px;
 }
 
-#roadmapBtn{
+#roadmapBtn {
   border-top: 1px solid #414449;
-
 }
 
 .aside-section .containers .left ul li:hover {
@@ -217,8 +216,7 @@ body {
   font-size: 18px;
 }
 
-
-#backBtn{
+#backBtn {
   display: none;
   position: relative;
   padding: 8px 10px;
@@ -347,28 +345,24 @@ body {
   box-shadow: 0px 0px 3px #00fff6;
 }
 
-#hideBar i{
+#hideBar i {
   display: inline-block;
   animation: arrowAnime 1s ease infinite;
-
 }
 
 @keyframes arrowAnime {
-  0%{
+  0% {
     left: -10px;
   }
-  100%{
+  100% {
     left: 20px;
   }
-
 }
 
-#hideBar:hover{
+#hideBar:hover {
   background-color: #03001c;
   color: #00fff6;
 }
-
-
 
 /* ?===== myStyle ===== */
 
@@ -441,7 +435,6 @@ body {
   .hero-section .navbar-section .right {
     padding-right: 20px;
     gap: 15px;
-    
   }
 
   .sign-btn {
@@ -461,7 +454,6 @@ body {
     left: -100%;
     transition: 0.5s;
     background-color: #03001c;
-    
   }
 
   .aside-section .containers .left ul li {
@@ -497,28 +489,22 @@ body {
     font-size: 22px;
   }
 
-  #backBtn{
+  #backBtn {
     display: block;
   }
 
   .aside-section .containers .right .part p {
     font-size: 20px;
     text-decoration: underline;
-
   }
 
-  #hideBar{
+  #hideBar {
     display: block;
   }
 }
 
-
 @media screen and (max-width: 600px) {
- 
-
-
   .aside-section .containers .right p {
     font-size: 12px;
   }
-
-} 
+}
