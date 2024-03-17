@@ -43,8 +43,9 @@
 
         <aside class="aside-section" id="aside">
           <div class="containers">
-            <div class="left">
+            <div class="left" id="leftPart">
               <ul id="asideItem">
+                <div id="backBtn"><i class=" fa-solid fa-chevron-left"></i> Back</div>
                 <li id="roadmapBtn" class="myStyle">JavaScript Roadmap</li>
                 <li
                   data-bs-toggle="collapse"
@@ -293,7 +294,6 @@
                   </ul>
                 </div>
                 <li
-                  
                   data-bs-toggle="collapse"
                   data-bs-target="#collapse-list-prototypeJS"
                   aria-expanded="false"
@@ -410,8 +410,17 @@
                   </ul>
                 </div>
               </ul>
+              
             </div>
+
+            <div id="hideBar">
+              <i  class=" fa-solid fa-chevron-right"></i>
+            </div>
+
+            
+
             <div class="right">
+
               <!--todo ======JS Roadmap ====== -->
               <!--? ====== js Roadmap Content ====== -->
 
@@ -422,74 +431,74 @@
                     <div class="part">
                       <h2>1. Basic</h2>
                       <ul>
-                        <li><a href="">What is JavaScript</a></li>
-                        <li><a href="">Javascript How to Run</a></li>
-                        <li><a href="">Javascript Execution Context</a></li>
+                        <li><p>What is JavaScript</p></li>
+                        <li><p id="howtorunLink">Javascript How to Run</p></li>
+                        <li><p>Javascript Execution Context</p></li>
                       </ul>
                     </div>
                     <div class="part">
                       <h2>2. Variabels</h2>
                       <ul>
-                        <li><a href="">Var</a></li>
-                        <li><a href="">Let</a></li>
-                        <li><a href="">Const</a></li>
+                        <li><p>Var</p></li>
+                        <li><p>Let</p></li>
+                        <li><p>Const</p></li>
                       </ul>
                     </div>
                     <div class="part">
                       <h2>3. Data Type</h2>
                       <ul>
-                        <li><a href="">Number</a></li>
-                        <li><a href="">Boolean</a></li>
-                        <li><a href="">String</a></li>
-                        <li><a href="">Undefined</a></li>
-                        <li><a href="">Null</a></li>
-                        <li><a href="">Bigint</a></li>
+                        <li><p>Number</p></li>
+                        <li><p>Boolean</p></li>
+                        <li><p>String</p></li>
+                        <li><p>Undefined</p></li>
+                        <li><p>Null</p></li>
+                        <li><p>Bigint</p></li>
                       </ul>
                     </div>
 
                     <div class="part">
                       <h2>4. Operator</h2>
                       <ul>
-                        <li><a href="">Arithmatic Operator</a></li>
-                        <li><a href="">Comparison Operator</a></li>
-                        <li><a href="">Logical Operator</a></li>
-                        <li><a href="">Assignment Operator</a></li>
-                        <li><a href="">Ternary Operator</a></li>
-                        <li><a href="">Typeof Operator</a></li>
+                        <li><p>Arithmatic Operator</p></li>
+                        <li><p>Comparison Operator</p></li>
+                        <li><p>Logical Operator</p></li>
+                        <li><p>Assignment Operator</p></li>
+                        <li><p>Ternary Operator</p></li>
+                        <li><p>Typeof Operator</p></li>
                       </ul>
                     </div>
                     <div class="part">
                       <h2>5. Conditional Statements</h2>
                       <ul>
-                        <li><a href="">if</a></li>
-                        <li><a href="">else</a></li>
-                        <li><a href="">else if</a></li>
-                        <li><a href="">switch</a></li>
+                        <li><p>if</p></li>
+                        <li><p>else</p></li>
+                        <li><p>else if</p></li>
+                        <li><p>switch</p></li>
                       </ul>
                     </div>
                     <div class="part">
                       <h2>6. Loops</h2>
                       <ul>
-                        <li><a href="">for</a></li>
-                        <li><a href="">while</a></li>
-                        <li><a href="">do while</a></li>
-                        <li><a href="">for of</a></li>
-                        <li><a href="">for in</a></li>
+                        <li><p>for</p></li>
+                        <li><p>while</p></li>
+                        <li><p>do while</p></li>
+                        <li><p>for of</p></li>
+                        <li><p>for in</p></li>
                       </ul>
                     </div>
                     <div class="part">
                       <h2>7. Functions</h2>
                       <ul>
-                        <li><a href="">Arrow Function</a></li>
-                        <li><a href="">Annonymous Function</a></li>
+                        <li><p>Arrow Function</p></li>
+                        <li><p>Annonymous Function</p></li>
                         <li>
-                          <a href=""
-                            >Immediatly Invoked Function expression (IIFE)</a
+                          <p
+                            >Immediatly Invoked Function expression (IIFE)</
                           >
                         </li>
                         <li>
-                          <a href=""
-                            >Higher Order Function (map, filter, reduce)</a
+                          <p
+                            >Higher Order Function (map, filter, reduce)</
                           >
                         </li>
                       </ul>
@@ -497,53 +506,53 @@
                     <div class="part">
                       <h2>8. Built-in Methods</h2>
                       <ul>
-                        <li><a href="">Array Methods</a></li>
-                        <li><a href="">String Methods</a></li>
-                        <li><a href="">Number Methods</a></li>
+                        <li><p>Array Methods</p></li>
+                        <li><p>String Methods</p></li>
+                        <li><p>Number Methods</p></li>
                       </ul>
                     </div>
                     <div class="part">
                       <h2>9. this Keyword</h2>
                       <ul>
-                        <li><a href="">Implict Binding</a></li>
-                        <li><a href="">Explict Binding</a></li>
-                        <li><a href="">Call, Bind, Apply</a></li>
+                        <li><p>Implict Binding</p></li>
+                        <li><p>Explict Binding</p></li>
+                        <li><p>Call, Bind, Apply</p></li>
                       </ul>
                     </div>
 
                     <div class="part">
                       <h2>10. Prototypes</h2>
                       <ul>
-                        <li><a href="">Prototype Chain</a></li>
-                        <li><a href="">Prototypes & Inheritance</a></li>
-                        <li><a href="">Classes</a></li>
-                        <li><a href="">Iterators</a></li>
-                        <li><a href="">Generators</a></li>
-                        <li><a href="">Event Loop</a></li>
+                        <li><p>Prototype Chain</p></li>
+                        <li><p>Prototypes & Inheritance</p></li>
+                        <li><p>Classes</p></li>
+                        <li><p>Iterators</p></li>
+                        <li><p>Generators</p></li>
+                        <li><p>Event Loop</p></li>
                       </ul>
                     </div>
 
                     <div class="part">
                       <h2>11. Asynchoronous JS</h2>
                       <ul>
-                        <li><a href="">setTimeout</a></li>
-                        <li><a href="">setInterval</a></li>
-                        <li><a href="">Callbacks</a></li>
-                        <li><a href="">Promises</a></li>
-                        <li><a href="">async/awit</a></li>
+                        <li><p>setTimeout</p></li>
+                        <li><p>setInterval</p></li>
+                        <li><p>Callbacks</p></li>
+                        <li><p>Promises</p></li>
+                        <li><p>async/awit</p></li>
                       </ul>
                     </div>
 
                     <div class="part">
                       <h2>12. More Concepts</h2>
                       <ul>
-                        <li><a href="">Template Litarels</a></li>
-                        <li><a href="">Spread Operators</a></li>
-                        <li><a href="">Rest Operator</a></li>
-                        <li><a href="">Destructuring</a></li>
-                        <li><a href="">Extend Keywords</a></li>
-                        <li><a href="">Strict Mode</a></li>
-                        <li><a href="">Regular Expression</a></li>
+                        <li><p>Template Litarels</p></li>
+                        <li><p>Spread Operators</p></li>
+                        <li><p>Rest Operator</p></li>
+                        <li><p>Destructuring</p></li>
+                        <li><p>Extend Keywords</p></li>
+                        <li><p>Strict Mode</p></li>
+                        <li><p>Regular Expression</p></li>
                       </ul>
                     </div>
                   </div>
