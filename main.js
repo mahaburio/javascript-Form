@@ -108,6 +108,14 @@ const reduceContent = document.getElementById("reduceContent");
 
 //*todo========== Js Array & Methodes ========== */
 
+const arrayBtn = document.getElementById("arrayBtn");
+
+//* ========== Js Array & Methodes Content========== */
+
+const arrayContent = document.getElementById("arrayContent");
+
+
+
 //*todo========== Js String & Methodes ========== */
 
 //*todo========== Js Number & Methodes ========== */
@@ -193,6 +201,9 @@ const regularexContent = document.getElementById("regularexContent");
 const hideBar = document.getElementById("hideBar");
 const leftPart = document.getElementById("leftPart");
 const backBtn = document.getElementById("backBtn");
+const backBtn2 = document.getElementById("backBtn2");
+
+const backBtnContent = document.getElementById("backBtnContent");
 
 hideBar.addEventListener("click", () => {
   leftPart.style.left = "0px";
@@ -200,6 +211,16 @@ hideBar.addEventListener("click", () => {
 
 backBtn.addEventListener("click", () => {
   leftPart.style.left = "-100%";
+});
+
+backBtnContent.addEventListener("click", () => {
+  backBtn2.style.display = "block";
+});
+
+backBtn2.addEventListener("click", () => {
+  if (true) {
+    myFnc();
+  }
 });
 
 let btnArr = [
@@ -231,6 +252,7 @@ let btnArr = [
   mapBtn,
   filterBtn,
   reduceBtn,
+  arrayBtn,
   settimeoutBtn,
   setintervalBtn,
   callbackBtn,
@@ -254,7 +276,8 @@ let btnArr = [
   extendkeyBtn,
   strictBtn,
   regularexBtn,
-  howtorunLink,
+  arrayBtn
+  
 ];
 
 let contentArr = [
@@ -286,6 +309,7 @@ let contentArr = [
   mapContent,
   filterContent,
   reduceContent,
+  arrowContent,
   settimeoutContent,
   setintervalContent,
   callbackContent,
@@ -309,6 +333,7 @@ let contentArr = [
   extendkeyContent,
   strictContent,
   regularexContent,
+  arrayContent
 ];
 
 // let isClick = 0;
@@ -329,527 +354,542 @@ let contentArr = [
 //   }
 // });
 
-btnArr.forEach((element) => {
-  if (element == roadmapBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == roadmapContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+function myFnc() {
+  btnArr.forEach((element) => {
+    if (element == roadmapBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == roadmapContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == howToRunBtn || element == howtorunLink) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == howToRunContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == howToRunBtn || element == howtorunLink) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == howToRunContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == exContextBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == exContextContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == exContextBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == exContextContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == hoistingBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == hoistingContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == hoistingBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == hoistingContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == scopeBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == scopeContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == scopeBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == scopeContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == varBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == varContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == varBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == varContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == letBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == letContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == letBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == letContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == constBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == constContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == constBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == constContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == arithmaticBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == arithmaticContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == arithmaticBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == arithmaticContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == assigmentBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == assigmentContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == assigmentBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == assigmentContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == comparisonBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == comparisionContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == comparisonBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == comparisionContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == logicalBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == logicalContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == logicalBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == logicalContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == ternaryBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == ternaryContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == ternaryBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == ternaryContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == ifBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == ifContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == ifBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == ifContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == elseBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == elseContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == elseBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == elseContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == elseifBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == elseifContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == elseifBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == elseifContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == switchBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == switchContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == switchBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == switchContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == forBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == forContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == forBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == forContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == whileBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == whileContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == whileBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == whileContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == dowhileBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == dowhileContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == dowhileBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == dowhileContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == forinBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == forinContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == forinBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == forinContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == forofBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == forofContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == forofBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == forofContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == arrowBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == arrowContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == arrowBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == arrowContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == annonymousBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == annonymousContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == annonymousBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == annonymousContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == iifeBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == iifeContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == iifeBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == iifeContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == mapBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == mapContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == mapBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == mapContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == filterBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == filterContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == filterBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == filterContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == reduceBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == reduceContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == reduceBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == reduceContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == settimeoutBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == settimeoutContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == settimeoutBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == settimeoutContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == setintervalBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == setintervalContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == setintervalBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == setintervalContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == callbackBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == callbackContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == callbackBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == callbackContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == promisesBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == promisesContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == promisesBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == promisesContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == asyncBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == asyncContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == asyncBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == asyncContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == prototypeBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == prototypeContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == prototypeBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == prototypeContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == inheritanceBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == inheritanceContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == inheritanceBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == inheritanceContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == classesBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == classesContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == classesBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == classesContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == iteratorsBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == iteratorsContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == iteratorsBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == iteratorsContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == generatorsBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == generatorsContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == generatorsBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == generatorsContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == eventloopBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == eventloopContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == eventloopBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == eventloopContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == implictBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == implictContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == implictBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == implictContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == explictBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == explictContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == explictBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == explictContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == callBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == callContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == callBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == callContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == bindBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == bindContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == bindBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == bindContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == applyBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == applyContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == applyBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == applyContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == templateBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == templateContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == templateBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == templateContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == spreadBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == spreadContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == spreadBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == spreadContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == restBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == restContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == restBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == restContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == destructuringBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == destructuringContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == destructuringBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == destructuringContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == extendkeyBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == extendkeyContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == extendkeyBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == extendkeyContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == strictBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == strictContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == strictBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == strictContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  } else if (element == regularexBtn) {
-    element.addEventListener("click", () => {
-      contentArr.forEach((content) => {
-        if (content == regularexContent) {
-          content.style.display = "block";
-        } else {
-          content.style.display = "none";
-        }
+    } else if (element == regularexBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == regularexContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
       });
-    });
-  }
-});
+    }else if (element == arrayBtn) {
+      element.addEventListener("click", () => {
+        contentArr.forEach((content) => {
+          if (content == arrayContent) {
+            content.style.display = "block";
+          } else {
+            content.style.display = "none";
+          }
+        });
+      });
+    }
+    
+  });
 
-contentArr.forEach((content) => {
-  if (content == roadmapContent) {
-    content.style.display = "block";
-  } else {
-    content.style.display = "none";
-  }
-});
+  contentArr.forEach((content) => {
+    if (content == roadmapContent) {
+      content.style.display = "block";
+    } else {
+      content.style.display = "none";
+    }
+  });
+}
+
+myFnc();
 
 // ? ========== PROTI CLICK A J BACKGROUND CHANGE HOI SETA myStyle add and Remove ===========
 

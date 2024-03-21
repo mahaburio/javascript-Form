@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Learning Javascript</title>
     <link rel="shortcut icon" href="./assets/my-logo.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
+    />
     <script src="https://kit.fontawesome.com/206993456b.js"></script>
     <link
       rel="stylesheet"
@@ -238,10 +242,7 @@
                   </ul>
                 </div>
                 <li id="arrayBtn">
-                  JS Arrays & Methodes<i
-                    id="arrayIcon"
-                    class="fa-solid fa-chevron-down"
-                  ></i>
+                  JS Arrays & Methodes
                 </li>
                 <li id="stringBtn">
                   JS String & Methodes <i class="fa-solid fa-chevron-down"></i>
@@ -418,14 +419,17 @@
               <i class="fa-solid fa-chevron-right"></i>
             </div>
 
-            <div class="right">
+            <div class="right" id="rightSection">
+              <button id="backBtn2">
+                <i class="bi bi-arrow-90deg-left"></i>
+              </button>
               <!--todo ======JS Roadmap ====== -->
               <!--? ====== js Roadmap Content ====== -->
 
               <div id="roadmapContent" class="animationText">
                 <h1>Javascript Roadmap</h1>
                 <div class="content-section">
-                  <div class="">
+                  <div id="backBtnContent">
                     <div class="part">
                       <h2>1. Basic</h2>
                       <ul>
@@ -557,7 +561,53 @@
               <!--? ====== js How to Run Content ====== -->
 
               <div id="howToRunContent" class="animationText">
-                <h1>javascript How to Run</h1>
+                <h1>What is Javascript? & How to Run Javascript</h1>
+                <p>
+                  <span style="display: block; color: orange; padding: 5px"
+                    >জাভাস্ক্রিপ্ট কী?</span
+                  >
+                  জাভাস্ক্রিপ্ট হল ক্রস প্লাটফর্ম অবজেক্ট ওরিয়েন্টেড
+                  স্ক্রিপ্টিং ল্যাঙ্গুয়েজ। জাভাস্ক্রিপ্টের একটি বড় সুবিধা হল
+                  একটি ছোট প্রোগ্রামিং- এর সাহায্যে অনেক বড় কাজ করা যায়।
+                  জাভাস্ক্রিপ্ট হল একটি ইন্টারপ্রিটেড ল্যাঙ্গুয়েজ (যার অর্থ হল
+                  এটার পূর্ববর্তী কোন কম্পাইলেশনের প্রয়োজন হয় না।
+                  জাভাস্ক্রিপ্ট হল একটি ক্লাইন্ট সাইড স্ক্রিপ্টিং ল্যাংগুয়েজ বা
+                  ব্রাউজার স্ক্রিপ্টিং। ক্লাইন্ট সাইড স্ক্রিপ্টিং ল্যাংগুয়েজ এর
+                  অর্থ হচ্ছে যে ওয়েব ব্রাউজ করবে তার ব্রাউজার এই
+                  স্ক্রিপ্টগুলোকে run/execute করবে। স্ক্রিপ্টিং ল্যাংগুয়েজ হল
+                  প্রোগ্রামিং ল্যাংগুয়েজের সহজ ও সংক্ষিপ্ত রুপ। ওয়েব পেজে
+                  প্রোগ্রামিং-এর ছোঁয়া দিতেই স্কিপ্টের উদ্ভাবন। আপনি যদি ওয়েব
+                  অ্যাপ্লিকেশন তৈরি করতে চান তবে আপনাকে অবশ্যই স্ক্রিপ্টিং
+                  ল্যাঙ্গুয়েজ ভালভাবে জানতে হবে। জাভাস্ক্রিপ্টের জন্ম সি/সি++ ও
+                  জাভা থেকে। এর সিনট্যাক্স সি/সি++ ও জাভার মত হলেও সি/সি++ ও
+                  জাভার অনেক জটিলতাই এখানে নেই। তাই এর সিনট্যাক্স অনেকটা ঐ সব
+                  ল্যাঙ্গুয়েজের মত। আরেকটি কথা জাভাস্ক্রিপ্ট ওয়েবের জন্য ছোট
+                  স্ক্রিপ্ট লিখতে সাহায্য করে যা HTML ডকুমেন্টের
+                  ইন্টারঅ্যাক্টিভিটি বাড়ায়। ক্লাইন্ট সাইড এর বিপরীত হল সার্ভার
+                  সাইড,সার্ভার সাইড ল্যাংগুয়েজ গুলোর কোড ওয়েব সার্ভার এর
+                  মাধ্যমে execute / run হয়। জাভাস্ক্রিপ্ট এর প্রধান সুবিধা হল
+                  এর মাধ্যমে ভিজিটরকে সাইটের এর প্রতি আকর্ষন সৃষ্টি করা
+                  যায়।জাভাস্ক্রিপ্টে নিজস্ব ফাংশন তৈরি করতে পারবেন, ইচ্ছামত
+                  ভেরিয়েবল ব্যবহার করতে পারবেন এমনকি ভেরিয়েবল টাইপ
+                  ডিকলারেশনেরও দরকার হবে না। জাভাস্ক্রিপ্ট হল ইন্টারপ্রিটেড
+                  ল্যাঙ্গুয়েজ অর্থাৎ এটির প্রতিটি লাইন ইন্টারপ্রেট (ব্রাউজার)
+                  দ্বারা পালিত হয়। আরেকটি কথা ওয়েবসাইট সাধারণত দুই ধরনের হয়ে
+                  থাকে,ডাইনামিক এবং স্ট্যাটিক। স্ট্যাটিক ওয়েবসাইট হল তাইই যার
+                  ডাটা পরিবর্তনশীল নয়, অর্থাৎ সহজ কথায় স্থির। ডাইনামিক হল যার
+                  ডাটা পরিবর্তনশীল। জাভাস্ক্রিপ্ট ওয়েবসাইটকে ডাইনামিক রূপ
+                  দেয়ার ক্ষেত্রে এক অপরিহার্য ভূমিকা পালন করে।
+                </p>
+                <p>
+                  <span style="display: block; color: orange; padding: 5px"
+                    >ইতিহাসঃ </span
+                  >জাভাস্ক্রিপ্ট উদ্ভাবন করেছে নেটস্কেপ কমুনিকেশন কর্পোরেশনের
+                  প্রোগ্রামার Brendan Eich। ১৯৯৫ সালের সেপ্টেম্বরে LiveScript
+                  নামে প্রথম জাভাস্ক্রিপ্ট আত্মপ্রকাশ করে। এরপর ডিসেম্বর ৪,১৯৯৫
+                  সালে এর নাম পরিবর্তন করে জাভাস্ক্রিপ্ট রাখা হয়, যদিও তখনও
+                  জাভাস্ক্রিপ্টের অফিসিয়াল নাম ছিল EcmaScript । ECMAScript
+                  ডেভলপ ও নিয়ন্ত্রন করত ECMA (European Computer Manufacturer's
+                  Association) নামক একটি আর্ন্তর্জাতিক সংগঠন।
+                </p>
               </div>
 
               <!--? ====== js EXecution Content ====== -->
@@ -583,6 +633,18 @@
 
               <div id="varContent" class="animationText">
                 <h1>Var</h1>
+                <p>
+                  <span style="display: block; color: orange; padding: 5px"
+                    >জাভাস্ক্রিপ্ট ভেরিয়েবল নামের নিয়মনীতিঃ
+                  </span>
+                  • ভেরিয়েবলের নাম কেস সেন্সেটিভ(y এবং Y দুটি আলাদা ভেরিয়েবল)
+                  <br />• ভেরিয়েবলের নাম অবশ্যই বর্ণ (A,B,C) বা আন্ডারস্কোর(—)
+                  দিয়ে শুরু হবে। <br />• ভেরিয়েবলের নামে যে কোন বর্ণ বা
+                  বর্ণমালা সংখ্যা (0-9) বা আন্ডারস্কোর থাকতে পারে। <br />•
+                  ভেরিয়েবলের নামের মাঝে কোন স্পেস থাকতে পারবে না। <br />•
+                  ভেরিয়েবলের নামের মাঝে বিভিন্ন চিহ্ন যেমন কমা, ফুলস্টপ ব্যবহার
+                  করা যাবে না।
+                </p>
               </div>
               <!--? ====== js Let Content ====== -->
 
@@ -723,6 +785,12 @@
 
               <!--todo ======JS Array ====== -->
               <!--? ====== js Array Methode content ====== -->
+
+              <div id="arrayContent" class="animationText">
+                <h1>Array & Methods</h1>
+                <p></p>
+              
+              </div>
 
               <!--todo ======JS String ====== -->
               <!--? ====== js String Methode content ====== -->
