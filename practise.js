@@ -78,19 +78,19 @@ console.log(x);
 
  */
 
-let arr = [25, 10, 5, 100, 50, 900, 10, 2, 25];
+// let arr = [25, 10, 5, 100, 50, 900, 10, 2, 25];
 
-let smallestNumber = arr[0];
-let secondSmallestNumber = [];
+// let smallestNumber = arr[0];
+// let secondSmallestNumber = [];
 
-for (let i = 0; i < arr.length; i++) {
-  if (smallestNumber > arr[i]) {
-    smallestNumber = arr[i];
-    secondSmallestNumber.push(arr[i]);
-  }
-}
+// for (let i = 0; i < arr.length; i++) {
+//   if (smallestNumber > arr[i]) {
+//     smallestNumber = arr[i];
+//     secondSmallestNumber.push(arr[i]);
+//   }
+// }
 
-console.log(secondSmallestNumber[secondSmallestNumber.length-2]);
+// console.log(secondSmallestNumber[secondSmallestNumber.length-2]);
 
 /* 
 
@@ -105,5 +105,102 @@ s = 5 i = 2 {true} s = 2
 s = 2 i = 25 {false}
 
 smallestNumber = 2
-
 */
+
+/* let sum = (a, b) => a + b;
+let sub = (a, b) => a - b;
+let mul = (a, b) => a * b;
+let div = (a, b) => a / b;
+let mod = (a, b) => a % b;
+
+const clacArr = [sum, sub, mul, div, mod];
+
+let a = 10;
+let b = 20;
+
+for (let i = 0; i < clacArr.length; i++) {
+  const output = clacArr[i](a, b);
+  console.log(`${clacArr[i].name} Output is = ${output}`);
+}
+ */
+
+/* 
+let grapPoint = [
+  [0, 0],
+  [2, 5],
+  [4, 4],
+  [5, 9],
+];
+for (let i = 0; i < grapPoint.length; i++) {
+  console.log(
+    `${grapPoint[i]} = x value is ${grapPoint[i][0]} & y value is ${grapPoint[i][1]}`
+  );
+}
+ */
+
+/* let numbers = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+for (let i = 0; i < numbers.length; i++) {
+  for (let j = 0; j < numbers[i].length; j++) {
+    // console.log(numbers[i][j]);
+  }
+}
+
+for (let i = 0; i < grapPoint.length; i++) {
+  for (let j = 0; j < grapPoint[i].length; j++) {
+    console.log(grapPoint[i][j]);
+  }
+}
+ */
+
+/* const matrixA = [
+  [0, 5],
+  [8, 9],
+  [2, 6],
+];
+
+const matrixB = [
+  [4, 2],
+  [6, 3],
+  [5, 3],
+];
+
+const matrixSum = (p1, p2) => {
+  for (let i = 0; i < p1.length; i++) {
+    for (let j = 0; j < p1[i].length; j++) {
+      const result = `${p1[i][j]} + ${p2[i][j]} = ${p1[i][j] + p2[i][j]}`;
+      console.log(result);
+    }
+  }
+};
+
+matrixSum(matrixA, matrixB); */
+
+/* function triFnc(a, b) {
+  for (let i = 0; i < a.length; i++) {
+    console.log(b[i]);
+  }
+}
+
+let a = [1, 4, 5, 0, 10];
+let b = [25, 1, 0, 10, 5, 100, 5];
+
+triFnc(a, b);
+ */
+
+/* let arr = [1,5,2]
+let arr2 = [10,5,10]
+
+arr.push.apply(arr2, arr)
+
+console.log(arr2); */
+
+var x = [1, 2, 5];
+x = [];
+var y = x;
+
+console.log(x, y);
